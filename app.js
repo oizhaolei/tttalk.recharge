@@ -14,6 +14,16 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
+// set views for error and 404 pages
+app.set('views', __dirname + '/templates/views');
+
+// set our default template engine to "jade"
+// which prevents the need for extensions
+app.set('view engine', 'jade');
+
+// serve static files
+app.use(express.static(__dirname + '/public'));
+
 app.all('/', function(req, res) {
   res.json({});
 });

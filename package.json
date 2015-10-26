@@ -5,6 +5,7 @@
   "dependencies": {
     "body-parser": "*",
     "express": "*",
+    "jade": "^1.11.0",
     "log4js": "*",
     "mobile-detect": "^1.3.0",
     "node-gearman": "*",
