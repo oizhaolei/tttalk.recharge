@@ -2,5 +2,10 @@ doctype html
 html
   head
     meta(http-equiv="refresh" content="0; url=tttalk://tttalk.org/charge/#{serial}" )
+    link(rel='stylesheet', href='/css/wechat_popup.css')
   body
+  div(id='weixin-tip')
+    p
+      img(id='wechat_tip_img' src='../../img/weixin_ios_tip.png' style='float:right')
+      span(id='close' class='close')=X
     p please open this link with BROWSER
